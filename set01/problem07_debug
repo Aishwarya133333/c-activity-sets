@@ -1,0 +1,34 @@
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gcc -g -O0 problem07.c -o problem07.exe
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gdb
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) file ./problem07
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01\problem07.exe...done.
+(gdb) l
+1       #include<stdio.h>
+2
+3       int input_n();
+4       int sum_n_nos(int n,int sum);
+5       void output(int n, int sum);
+6
+7       int main()
+8       {
+9           int n,sum=0;
+10          n=input_n();
+(gdb) r
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01/./problem07.exe
+[New Thread 1016.0x2540]
+[New Thread 1016.0x4214]
+Enter the value of n:
+6
+The sum of 6 is 21
+[Inferior 1 (process 1016) exited normally]
+(gdb) quit
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> 
