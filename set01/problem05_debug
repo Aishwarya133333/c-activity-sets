@@ -1,0 +1,49 @@
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gcc problem05.c
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> ./a.exe        
+Enter the vlaues:
+5
+Enter the vlaues:
+7
+Enter the vlaues:
+3
+the largest number between 5,7 and 3 is 7
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gcc -g -O0 problem05.c -o problem05.exe
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gdb
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) l
+No symbol table is loaded.  Use the "file" command.
+(gdb) file ./problem05
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01\problem05.exe...done.
+(gdb) l
+1       #include<stdio.h>
+2       int input();
+3       int compare(int a,int b,int c,int largest);
+4       void output(int a,int b,int c,int largest);
+5
+6       int main()
+7       {
+8           int a,b,c,largest;
+9           a=input();
+10          b=input();
+(gdb) r
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01/./problem05.exe 
+[New Thread 10752.0x3014]
+[New Thread 10752.0x11b0]
+Enter the vlaues:
+4
+Enter the vlaues:
+6
+Enter the vlaues:
+9
+the largest number between 4,6 and 9 is 9
+[Inferior 1 (process 10752) exited normally]
+(gdb) quit
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01>
