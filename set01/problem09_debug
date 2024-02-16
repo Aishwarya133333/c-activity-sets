@@ -1,0 +1,57 @@
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gcc -g -O0 problem09.c -o problem09.exe
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gdb
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) file ./problem09
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01\problem09.exe...done.
+(gdb) l
+2       #include<math.h>
+3
+4       float input();
+5       float square_root(float n);
+6       void output(float n,float sqrroot);
+7
+8       int main()
+9       {
+10          float n,sqrroot;
+11          n=input();
+(gdb) r
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01/./problem09.exe 
+[New Thread 14484.0x2494]
+[New Thread 14484.0x23cc]
+Enetr the number:
+23
+6.750000
+5.078704
+4.803709
+4.795838
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+4.795832
+the square rrot of 23.000000 is 4.795832
+[Inferior 1 (process 14484) exited normally]
+(gdb) quit
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01>
