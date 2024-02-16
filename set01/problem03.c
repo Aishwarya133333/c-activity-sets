@@ -9,7 +9,7 @@ int main()
     a=input();
     b=input();
     sum=add(a,b);
-    putput(a,b,sum);
+    output(a,b,sum);
     return 0;
 }
 

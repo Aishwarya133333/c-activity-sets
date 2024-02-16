@@ -1,0 +1,11 @@
++l
+1	//2. Write a C program to add two numbers.
+2	#include<stdio.h>
+3	int main()
+4	{
+5	    int x,y,sum=0;
+6	    printf("Enter the first number:");
+7	    scanf("%d",&x);
+8	
+9	    printf("Enter the second number:");
+10	    scanf("%d",&y);
