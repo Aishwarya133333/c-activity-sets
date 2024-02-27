@@ -1,0 +1,53 @@
+PS C:\Users\Dell\Downloads\git sem 2> cd c-activity-sets
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets> cd set02 
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git add .
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git commit -m "test"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../set01/problem03.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git push
+Everything up-to-date
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> gcc problem02.c -O0 -g
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02\a.exe...done.
+(gdb) l
+1       #include<stdio.h>
+2       int input_side();
+3       int check_scalene(int a,int b,int c);
+4       void output(int a,int b,int c,int isscalene);
+5
+6       int main()
+7       {
+8           int side1,side2,side3,is_scalene;
+9           side1=input_side();
+10          side2=input_side();
+(gdb) r
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02/a.exe 
+[New Thread 3192.0x3240]
+[New Thread 3192.0x1d74]
+Enter the length of a side of the triangle:5
+Enter the length of a side of the triangle:4
+Enter the length of a side of the triangle:5
+The triangle with sides 5, 4, and 5 is not scalene.
+[Inferior 1 (process 3192) exited normally]
+(gdb) b
+No default breakpoint address now.
+(gdb) s
+The program is not being run.
+(gdb) q
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02>
