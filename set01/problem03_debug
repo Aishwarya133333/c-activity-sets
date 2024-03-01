@@ -1,5 +1,13 @@
-PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gcc -g -O0 problem03.c -o problem03.exe
-PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gdb
+PS C:\Users\Dell\Downloads\git sem 2> cd c-activity-sets
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets> cd set01 
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> git add .
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> git commit -m "test"
+[main fc53e56] test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> git push . 
+Everything up-to-date
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gcc -O0 -g problem03.c
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01> gdb a.exe
 GNU gdb (GDB) 7.6.1
 Copyright (C) 2013 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -8,16 +16,8 @@ There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
 and "show warranty" for details.
 This GDB was configured as "mingw32".
 For bug reporting instructions, please see:
-<http://www.gnu.org/software/gdb/bugs/>.
-(gdb) L
-No symbol table is loaded.  Use the "file" command.
-(gdb) l
-No symbol table is loaded.  Use the "file" command.
-(gdb) file
-No executable file now.
-No symbol file now.
-(gdb) file ./problem03
-Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01\problem03.exe...done.
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01\a.exe...done.
 (gdb) l
 1       #include<stdio.h>
 2       int input();
@@ -30,14 +30,18 @@ Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01\pro
 9           a=input();
 10          b=input();
 (gdb) r
-Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01/./problem03.exe
-[New Thread 11616.0x390c]
-[New Thread 11616.0x3234]
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01/a.exe 
+[New Thread 3836.0x4560]
+[New Thread 3836.0x180c]
 Enter the value:
-3 
+1
 Enter the value:
-5
-the sum of 3 and 5 is 8
-[Inferior 1 (process 11616) exited normally]
+2
+the sum of 1 and 2 is 3
+[Inferior 1 (process 3836) exited normally]
+(gdb) b
+No default breakpoint address now.
+(gdb) s
+The program is not being run.
 (gdb) q
 PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set01>
