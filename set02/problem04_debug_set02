@@ -1,0 +1,44 @@
+PS C:\Users\Dell\Downloads\git sem 2> cd c-activity-sets
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets> cd set02
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git add .
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git commit -m "test"
+[main b45e614] test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git push .
+Everything up-to-date
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> gcc -O0 -g problem04.c
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02\a.exe...done.
+(gdb) l
+1       #include<stdio.h>
+2
+3       int input_array_size();
+4       void input_array(int n,int a[n]);
+5       int sum_composite_numbers(int n,int a[n]);
+6       void output(int sum);
+7
+8       int main()
+9       {
+10          int size, sum;
+(gdb) r
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02/a.exe 
+[New Thread 16872.0x1fd8]
+[New Thread 16872.0x305c]
+Enter the size of the array:1 2 7 8 12 
+Enter the elements of the array:sum of composite numbers in the array:2
+[Inferior 1 (process 16872) exited normally]
+(gdb) b
+No default breakpoint address now.
+(gdb) s
+The program is not being run.
+(gdb) q
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02>
