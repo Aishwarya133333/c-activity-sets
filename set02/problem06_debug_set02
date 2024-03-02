@@ -1,0 +1,43 @@
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git add .
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git commit -m "test"
+[main 63fd1d2] test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> git push .
+Everything up-to-date
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> gcc -O0 -g problem06.c 
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02\a.exe...done.
+(gdb) l
+1       #include<stdio.h>
+2       #include<string.h>
+3       void input_string(char *a);
+4       void str_reverse(char *str, char *rev_str);
+5       void output(char *a, char *reverse_a);
+6
+7       int main()
+8       {
+9           char str[100],reverse_str[100];
+10          input_string(str);
+(gdb) r
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02/a.exe 
+[New Thread 5612.0x3f60]
+[New Thread 5612.0x3f5c]
+Enter a string:hello
+Original string: hello
+Reversed string: olleh~╝u
+[Inferior 1 (process 5612) exited normally]
+(gdb) b
+No default breakpoint address now.
+(gdb) s
+The program is not being run.
+(gdb) q
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set02>
