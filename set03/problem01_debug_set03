@@ -1,0 +1,47 @@
+PS C:\Users\Dell\Downloads\git sem 2> cd c-activity-sets
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets> cd set03 
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> git add .
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> git commit -m "test"
+[main 84e0711] test
+ 2 files changed, 64 insertions(+)
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> git push .
+Everything up-to-date
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> gcc -O0 -g problem01.c
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03\a.exe...done.
+(gdb) l 
+13
+14      void output(float distance)
+15      {
+16          printf("%f\n",distance);
+17      }
+18
+19      int main()
+20      {
+21          float x1,x2,y1,y2,distance;
+22          input(&x1,&y1,&x2,&y2);
+(gdb) r
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03/a.exe 
+[New Thread 17480.0x2ad8]
+[New Thread 17480.0x37bc]
+enter values:
+1 1
+enter values:
+2 2
+1.414214
+[Inferior 1 (process 17480) exited normally]
+(gdb) s
+The program is not being run.
+(gdb) b
+No default breakpoint address now.
+(gdb) q
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03>
