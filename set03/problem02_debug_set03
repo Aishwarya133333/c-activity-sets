@@ -1,0 +1,50 @@
+PS C:\Users\Dell\Downloads\git sem 2> cd c-activity-sets
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets> cd set03
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> git add .
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> git commit -m "test"
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> git push . 
+Everything up-to-date
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> gcc -O0 -g problem02.c
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03\a.exe...done.
+(gdb) l 
+27          else
+28          {
+29              printf("the points do not lie on a tri");
+30          }
+31      }
+32
+33      int main()
+34      {
+35          float x1,y1,x2,y2,x3,y3,result;
+36          input_triangle(&x1,&y1,&x2,&y2,&x3,&y3);
+(gdb) r
+Starting program: C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03/a.exe
+[New Thread 17516.0x2410]
+[New Thread 17516.0x36ec]
+pls enter values for triangle: 1 1
+pls enter values for triangle:0 0 
+pls enter values for traingle:1 1
+the points do not lie on a tri[Inferior 1 (process 17516) exited normally]
+(gdb) s
+The program is not being run.
+(gdb) b
+No default breakpoint address now.
+(gdb) q
+PS C:\Users\Dell\Downloads\git sem 2\c-activity-sets\set03> 
